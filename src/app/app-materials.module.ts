@@ -1,12 +1,14 @@
 import {
     MatButtonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatInputModule
 } from '@angular/material';
 
 
 export const materialImports = [
     MatButtonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatInputModule
 ];
