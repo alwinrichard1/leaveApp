@@ -1,0 +1,106 @@
+<div class="wrapper ">
+  <app-sidebar></app-sidebar>
+  <div class="main-panel">
+    <app-header> </app-header>
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-header card-header-info card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">person_add</i>
+                </div>
+                <p class="card-category">You can add a new person here</p>
+                <h3 class="card-title">Add User </h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons">person</i> You've added 5 persons
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div (click)=" openDialog()" class="card card-stats">
+              <div class="card-header card-header-success card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">add</i>
+                </div>
+                <p class="card-category">You can add a new project here</p>
+                <h3 class="card-title">Add Project</h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons">ballot</i> You've added 5 projects
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="card">
+              <div class="card-header card-header-info">
+                <h4 class="card-title">Person List</h4>
+                <p class="card-category">List of employees on 15th September, 2016</p>
+              </div>
+              <div class="card-body table-responsive">
+                <table class="table table-hover">
+                  <thead class="text-warning">
+                    <th>UID</th>
+                    <th>Name</th>
+                    <th>Project</th>
+                    <th>Actions</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>U61361</td>
+                      <td>Alwin Dennis</td>
+                      <td>Consumer and Agent integration</td>
+                      <td>
+                        <i matTooltip="Edit details" class="material-icons">create</i>
+                        <i matTooltip="View details" class="material-icons">filter_list</i>
+                        <i matTooltip="Delete" class="material-icons">clear</i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card">
+              <div class="card-header card-header-success">
+                <h4 class="card-title">Project List</h4>
+                <p class="card-category">List of all projects on 15th September, 2016</p>
+              </div>
+              <div class="card-body table-responsive">
+                <table class="table table-hover">
+                  <thead class="text-warning">
+                    <th>Project ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Consumer and Agent integration</td>
+                      <td>
+                        <i matTooltip="Edit details" class="material-icons">create</i>
+                        <i matTooltip="View details" class="material-icons">filter_list</i>
+                        <i matTooltip="Delete" class="material-icons">clear</i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>

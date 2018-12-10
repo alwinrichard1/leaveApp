@@ -7,28 +7,33 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { materialImports } from './app-materials.module';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { templateImports } from './app-templates.module';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      HomeComponent,
-      LoginComponent,
-      SidebarComponent,
-      HeaderComponent,
-      FooterComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      materialImports
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        LoginComponent,
+        SidebarComponent,
+        HeaderComponent,
+        FooterComponent,
+        AdminComponent,
+        templateImports
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        materialImports
+    ],
+    providers: [],
+    bootstrap: [
+        AppComponent
+    ],
+    entryComponents: [templateImports]
 })
 export class AppModule { }
