@@ -16,9 +16,9 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  openDialog(): void {
+  addProject(): void {
     const dialogRef = this.dialog.open(AddProjectComponent, {
-      width: '250px',
+      width: '500px',
       data: { name: 'hi', animal: 'this.animal' }
     });
 

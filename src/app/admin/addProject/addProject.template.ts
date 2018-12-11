@@ -8,12 +8,19 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 export class AddProjectComponent {
 
+    statuses = [
+        { value: 'active', viewValue: 'Active' },
+        { value: 'inactive', viewValue: 'Inactive' }
+    ];
+
     constructor(
         public dialogRef: MatDialogRef<AddProjectComponent>,
         @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
 
+
     onNoClick(): void {
         this.dialogRef.close();
     }
+
 
 }

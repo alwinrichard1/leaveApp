@@ -1,1 +1,29 @@
-<h1>hi</h1>
+<h4 class="template-header">Add new project</h4>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Project ID">
+  </mat-form-field>
+  <mat-form-field class="example-full-width float-left">
+    <input matInput placeholder="Project Type">
+  </mat-form-field>
+  <mat-form-field class="example-full-width full-width">
+    <input matInput placeholder="Project Name">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Team Lead">
+  </mat-form-field>
+  <mat-form-field class="example-full-width float-left">
+    <input matInput placeholder="Billing Type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Status">
+      <mat-option *ngFor="let status of statuses" [value]="status.value">
+        {{status.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+
+  <button class="save-btn" mat-raised-button>Save</button>
+</form>
