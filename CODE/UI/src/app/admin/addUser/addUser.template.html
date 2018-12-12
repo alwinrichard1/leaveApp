@@ -1,0 +1,54 @@
+<h4 class="template-header">Add new user</h4>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="UID">
+  </mat-form-field>
+  <mat-form-field class="float-left">
+    <mat-select placeholder="User Type">
+      <mat-option *ngFor="let i of userTypes" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width ">
+    <input matInput placeholder="First Name">
+  </mat-form-field>
+  <mat-form-field class="example-full-width float-left">
+    <input matInput placeholder="Last Name">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email">
+  </mat-form-field>
+  <mat-form-field class="float-left">
+    <mat-select placeholder="Project">
+      <mat-option *ngFor="let i of projects" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Reporting Manager">
+      <mat-option *ngFor="let i of managers" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width float-left">
+    <input matInput placeholder="Work days">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Shift timings">
+      <mat-option *ngFor="let i of shiftTimings" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="float-left">
+    <mat-select placeholder="Status">
+      <mat-option *ngFor="let i of statuses" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button class="save-btn" mat-raised-button>Save</button>
+</form>
