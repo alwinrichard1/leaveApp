@@ -6,14 +6,14 @@
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6 main-tiles">
             <div (click)="addUser()" class="card card-stats">
               <div class="card-header card-header-info card-header-icon">
                 <div class="card-icon">
                   <i class="material-icons">person_add</i>
                 </div>
                 <p class="card-category">You can add a new user here</p>
-                <h3 class="card-title">Add User </h3>
+                <h4 class="card-title header-tile">Add User </h4>
               </div>
               <div class="card-footer">
                 <div class="stats">
@@ -22,18 +22,50 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6 main-tiles">
             <div (click)="addProject()" class="card card-stats">
               <div class="card-header card-header-success card-header-icon">
                 <div class="card-icon">
                   <i class="material-icons">add</i>
                 </div>
                 <p class="card-category">You can add a new project here</p>
-                <h3 class="card-title">Add Project</h3>
+                <h4 class="card-title header-tile">Add Project</h4>
               </div>
               <div class="card-footer">
                 <div class="stats">
                   <i class="material-icons">ballot</i> You've added 5 projects
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 main-tiles">
+            <div (click)="addAbsenceTypes()" class="card card-stats">
+              <div class="card-header card-header-icon">
+                <div class="card-icon teal-bg">
+                  <i class="material-icons">calendar_today</i>
+                </div>
+                <p class="card-category">You can add absence types here</p>
+                <h4 class="card-title header-tile">Absence Types</h4>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons">ballot</i> You've added 5 projects
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 deactivated">
+            <div class="card card-stats">
+              <div class="card-header card-header-icon">
+                <div class="card-icon yellow-bg">
+                  <i class="material-icons">cloud_upload</i>
+                </div>
+                <p class="card-category">You can import users or projects here</p>
+                <h4 class="card-title header-tile">Import Users/Projects</h4>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons">ballot</i> Comming Soon...
                 </div>
               </div>
             </div>
@@ -89,6 +121,36 @@
                     <tr>
                       <td>1</td>
                       <td>Consumer and Agent integration</td>
+                      <td>
+                        <i matTooltip="Edit details" class="material-icons">create</i>
+                        <i matTooltip="View details" class="material-icons">filter_list</i>
+                        <i matTooltip="Delete" class="material-icons">clear</i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card">
+              <div class="card-header card-header- teal-bg">
+                <h4 class="card-title">Absence Types List</h4>
+                <input class="search-box" type="search" placeholder="Search">
+                <p class="card-category">List of all absence types on 15th September, 2016</p>
+              </div>
+              <div class="card-body table-responsive">
+                <table class="table table-hover">
+                  <thead class="text-warning">
+                    <th>Holiday Types</th>
+                    <th>Allowance</th>
+                    <th>Actions</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Flexi Leave</td>
+                      <td>3</td>
                       <td>
                         <i matTooltip="Edit details" class="material-icons">create</i>
                         <i matTooltip="View details" class="material-icons">filter_list</i>
