@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material';
 import { AddProjectComponent } from './addProject/addProject.template';
 import { AddUserComponent } from './addUser/addUser.template';
 import { AddAbsenceTypesComponent } from './addAbsenceTypes/addAbsenceTypes.template';
+import { viewDetailsComponent } from './viewDetails/viewDetails.template';
+import { editDetailsComponent } from './editDetails/editDetails.template';
 
 @Component({
   selector: 'app-admin',
@@ -50,5 +52,24 @@ export class AdminComponent implements OnInit {
       console.log('The dialog was closed');
     });
   }
+ viewDetails(): void {
+    const dialogRef = this.dialog.open(viewDetailsComponent, {
+      width: '350px',
+      data: { name: 'hi', animal: 'this.animal' }
+    });
 
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+  editDetails(): void {
+    const dialogRef = this.dialog.open(editDetailsComponent, {
+      width: '350px',
+      data: { name: 'hi', animal: 'this.animal' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 }

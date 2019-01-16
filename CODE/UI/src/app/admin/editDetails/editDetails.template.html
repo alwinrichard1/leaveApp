@@ -1,0 +1,96 @@
+<div class="editDetails">
+<h4 class="template-header">Edit Details - U45284</h4>
+<form class="example-form">
+<mat-card class="example-card">
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal details
+      </mat-panel-title>
+      <mat-panel-description>
+        Click here
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <!--<mat-form-field>
+      <input matInput placeholder="First name">
+     
+    </mat-form-field>-->
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="UID">
+    </mat-form-field>
+    <mat-form-field class="example-full-width ">
+      <input matInput placeholder="First Name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Last Name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email">
+    </mat-form-field>
+    <!--<mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>-->
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Account details
+      </mat-panel-title>
+      <mat-panel-description>
+        Click here
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field class="">
+    <mat-select placeholder="User Type">
+      <mat-option *ngFor="let i of userTypes" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+    <mat-form-field class="">
+    <mat-select placeholder="Project">
+      <mat-option *ngFor="let i of projects" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Reporting Manager">
+      <mat-option *ngFor="let i of managers" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width ">
+    <input matInput placeholder="Work days">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Shift timings">
+      <mat-option *ngFor="let i of shiftTimings" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <!--<mat-radio-group class="example-radio-group">
+    <mat-radio-button class="example-radio-button" *ngFor="let i of shiftTimings" [value]="i.value">
+      {{i.viewValue}}
+    </mat-radio-button>
+  </mat-radio-group>-->
+  <mat-form-field class="">
+    <mat-select placeholder="Status">
+      <mat-option *ngFor="let i of statuses" [value]="i.value">
+        {{i.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  </mat-expansion-panel>
+  <button class="save-btn editDetailsSave" mat-raised-button>Save</button>
+</mat-accordion>
+</mat-card>
+</form>
+</div>
+

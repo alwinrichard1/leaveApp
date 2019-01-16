@@ -13,6 +13,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { templateImports } from './app-templates.module';
 
+
 @NgModule({
     declarations: [
         AppComponent,

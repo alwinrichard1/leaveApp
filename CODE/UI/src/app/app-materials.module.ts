@@ -4,9 +4,12 @@ import {
     MatGridListModule,
     MatInputModule,
     MatTooltipModule,
+    MatExpansionModule,
     MatDialogModule,
     MatSelectModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatDividerModule,
+    MatRadioModule
 } from '@angular/material';
 
 
@@ -18,5 +21,8 @@ export const materialImports = [
     MatTooltipModule,
     MatDialogModule,
     MatSelectModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatExpansionModule,
+    MatDividerModule,
+    MatRadioModule
 ];
