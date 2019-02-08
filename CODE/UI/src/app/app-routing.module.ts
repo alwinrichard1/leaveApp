@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { leaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
 
 /** INCLUDE PATH IN ROUTES */
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'dashboard', component: DashboardComponent },
+    { path: 'leaveMgmt', component: leaveMgmtComponent },
     { path: '**', component: HomeComponent },
 
 ];

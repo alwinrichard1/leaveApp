@@ -13,6 +13,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { templateImports } from './app-templates.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { leaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
 import { ChartsModule } from 'ng2-charts';
 
 
@@ -26,7 +27,8 @@ import { ChartsModule } from 'ng2-charts';
       FooterComponent,
       AdminComponent,
       templateImports,
-      DashboardComponent
+      DashboardComponent,
+      leaveMgmtComponent
    ],
    imports: [
       BrowserModule,
