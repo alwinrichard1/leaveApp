@@ -12,29 +12,35 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { templateImports } from './app-templates.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        LoginComponent,
-        SidebarComponent,
-        HeaderComponent,
-        FooterComponent,
-        AdminComponent,
-        templateImports
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        materialImports
-    ],
-    providers: [],
-    bootstrap: [
-        AppComponent
-    ],
-    entryComponents: [templateImports]
+   declarations: [
+      AppComponent,
+      HomeComponent,
+      LoginComponent,
+      SidebarComponent,
+      HeaderComponent,
+      FooterComponent,
+      AdminComponent,
+      templateImports,
+      DashboardComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      BrowserAnimationsModule,
+      materialImports,
+      ChartsModule
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ],
+   entryComponents: [
+      templateImports
+   ]
 })
 export class AppModule { }
