@@ -1,0 +1,26 @@
+.bar-calender-row {
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.doughnut-row {
+  margin: 1%;
+}
+
+/*
+  Limited in width,
+  useful with grow mode proportional
+  or grow mode mixed
+*/
+.wrapper-horizontally-limited {
+  width: 500px !important;
+}
+ 
+/*
+  Limited in height,
+  useful with grow mode stretch
+*/
+.wrapper-vertically-limited {
+  width: 100% !important;
+  height: 250px !important;
+}
