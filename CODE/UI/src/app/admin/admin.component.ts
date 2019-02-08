@@ -5,6 +5,7 @@ import { AddUserComponent } from './addUser/addUser.template';
 import { AddAbsenceTypesComponent } from './addAbsenceTypes/addAbsenceTypes.template';
 import { viewDetailsComponent } from './viewDetails/viewDetails.template';
 import { editDetailsComponent } from './editDetails/editDetails.template';
+import { clearDetailsComponent } from './clearDetails/clearDetails.template';
 
 @Component({
   selector: 'app-admin',
@@ -64,6 +65,17 @@ export class AdminComponent implements OnInit {
   }
   editDetails(): void {
     const dialogRef = this.dialog.open(editDetailsComponent, {
+      width: '350px',
+      data: { name: 'hi', animal: 'this.animal' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  clearDetails(): void {
+    const dialogRef = this.dialog.open(clearDetailsComponent, {
       width: '350px',
       data: { name: 'hi', animal: 'this.animal' }
     });

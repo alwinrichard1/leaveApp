@@ -53,3 +53,6 @@
   .mat-expansion-panel-content{
     overflow:hidden;
   }
+  .template-header {
+    text-align: center;
+}

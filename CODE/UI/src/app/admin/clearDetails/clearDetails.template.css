@@ -11,8 +11,8 @@
   }
   
   .template-header {
-    background: linear-gradient(60deg, #79AFBC, #79AFBC);
-    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
+    background: linear-gradient(60deg, #26c6da, #00acc1);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4);
     border-radius: 3px;
     margin-top: -6px;
     margin-bottom: 19px;
@@ -20,13 +20,17 @@
     color: white;
   }
   
-  .save-btn {
-    width: 80%;
-    margin-left: 10%;
-    background: linear-gradient(60deg, #79AFBC, #79AFBC);
-    color: white;
+  .deleteConfText {
+    margin-left: 17%;
+    font-weight: bold;
+  }
+  #deleteConfTextSpan {
+    margin-left: 26%;
   }
   .template-header {
     text-align: center;
 }
-  
+.mat-raised-button {
+  margin-left: 17%;
+  font-weight: bold;
+}

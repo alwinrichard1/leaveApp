@@ -47,3 +47,6 @@
   @keyframes cssAnimation {
     to   { visibility: visible; }
   }
+  .template-header {
+    text-align: center;
+}

@@ -19,6 +19,7 @@ export class AddProjectComponent {
 
 
     onNoClick(): void {
+        alert(1);
         this.dialogRef.close();
     }
 
