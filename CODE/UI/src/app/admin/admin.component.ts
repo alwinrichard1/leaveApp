@@ -6,6 +6,9 @@ import { AddAbsenceTypesComponent } from './addAbsenceTypes/addAbsenceTypes.temp
 import { viewDetailsComponent } from './viewDetails/viewDetails.template';
 import { editDetailsComponent } from './editDetails/editDetails.template';
 import { clearDetailsComponent } from './clearDetails/clearDetails.template';
+import { viewProDetailsComponent } from './viewProDetails/viewProDetails.template';
+import { editProDetailsComponent } from './editProDetails/editProDetails.template';
+import { clearProDetailsComponent } from './clearProDetails/clearProDetails.template';
 
 @Component({
   selector: 'app-admin',
@@ -76,6 +79,37 @@ export class AdminComponent implements OnInit {
 
   clearDetails(): void {
     const dialogRef = this.dialog.open(clearDetailsComponent, {
+      width: '350px',
+      data: { name: 'hi', animal: 'this.animal' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+  viewProDetails(): void {
+    const dialogRef = this.dialog.open(viewProDetailsComponent, {
+      width: '350px',
+      data: { name: 'hi', animal: 'this.animal' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+  editProDetails(): void {
+    const dialogRef = this.dialog.open(editProDetailsComponent, {
+      width: '350px',
+      data: { name: 'hi', animal: 'this.animal' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  clearProDetails(): void {
+    const dialogRef = this.dialog.open(clearProDetailsComponent, {
       width: '350px',
       data: { name: 'hi', animal: 'this.animal' }
     });

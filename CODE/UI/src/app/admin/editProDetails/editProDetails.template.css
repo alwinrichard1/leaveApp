@@ -1,0 +1,58 @@
+.float-left {
+    float: right !important;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  :host /deep/ mat-dialog-container {
+    padding: 15px !important;
+  }
+  
+  .template-header {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4);
+    border-radius: 3px;
+    margin-top: -6px;
+    margin-bottom: 19px;
+    padding: 9px;
+    color: white;
+  }
+  
+  .save-btn {
+    width: 80%;
+    margin-left: 10%;
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    color: white;
+  }
+  .mat-card-image:first-child {
+    width: 60%;
+    border-radius: 30%;
+    margin-left: 18%;
+  }
+  /*.mat-card .mat-divider-horizontal {
+    width: 90%;
+    top: 195px;
+    left: 16px;
+  }
+  .accDetails .mat-divider .mat-divider-horizontal {
+    top : 260px;
+  }*/
+  .editDetailsSave {
+    margin-top: 15px;
+  }
+  .editDetails {
+    animation: cssAnimation 0s 0.2s forwards;
+    visibility: hidden;
+  }
+
+  @keyframes cssAnimation {
+    to   { visibility: visible; }
+  }
+  .mat-expansion-panel-content{
+    overflow:hidden;
+  }
+  .template-header {
+    text-align: center;
+}

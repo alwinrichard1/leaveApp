@@ -4,6 +4,9 @@ import { AddAbsenceTypesComponent } from './admin/addAbsenceTypes/addAbsenceType
 import { viewDetailsComponent } from './admin/viewDetails/viewDetails.template';
 import { editDetailsComponent } from './admin/editDetails/editDetails.template';
 import { clearDetailsComponent } from './admin/clearDetails/clearDetails.template';
+import { editProDetailsComponent } from './admin/editProDetails/editProDetails.template';
+import { viewProDetailsComponent } from './admin/viewProDetails/viewProDetails.template';
+import { clearProDetailsComponent } from './admin/clearProDetails/clearProDetails.template';
 
 export const templateImports = [
     AddProjectComponent,
@@ -11,5 +14,8 @@ export const templateImports = [
     AddAbsenceTypesComponent,
     viewDetailsComponent,
     editDetailsComponent,
-    clearDetailsComponent
+    clearDetailsComponent,
+    editProDetailsComponent,
+    viewProDetailsComponent,
+    clearProDetailsComponent
 ];
