@@ -15,6 +15,7 @@ import { templateImports } from './app-templates.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { leaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
 import { ChartsModule } from 'ng2-charts';
+import { ApprovalEscltnsComponent } from './approval-escltns/approval-escltns.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ChartsModule } from 'ng2-charts';
       AdminComponent,
       templateImports,
       DashboardComponent,
-      leaveMgmtComponent
+      leaveMgmtComponent,
+      ApprovalEscltnsComponent
    ],
    imports: [
       BrowserModule,

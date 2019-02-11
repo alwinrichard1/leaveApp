@@ -9,7 +9,8 @@ import {
     MatSelectModule,
     MatAutocompleteModule,
     MatDividerModule,
-    MatRadioModule
+    MatRadioModule,
+    MatCheckboxModule
 } from '@angular/material';
 
 
@@ -24,5 +25,6 @@ export const materialImports = [
     MatAutocompleteModule,
     MatExpansionModule,
     MatDividerModule,
-    MatRadioModule
+    MatRadioModule,
+    MatCheckboxModule
 ];

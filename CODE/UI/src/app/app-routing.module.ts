@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { leaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
+import { ApprovalEscltnsComponent } from './approval-escltns/approval-escltns.component';
 
 /** INCLUDE PATH IN ROUTES */
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'admin', component: AdminComponent },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'leaveMgmt', component: leaveMgmtComponent },
+    { path: 'approval-escltns', component:ApprovalEscltnsComponent },
     { path: '**', component: HomeComponent },
 
 ];
