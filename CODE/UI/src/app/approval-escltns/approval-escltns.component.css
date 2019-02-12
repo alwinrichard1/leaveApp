@@ -1,13 +1,29 @@
 .img img {
-    width: 26%;
-    margin-left: 32%;
+  width: 26%;
+  margin-left: 32%;
 }
+
 .button-green {
-    background-color: #23b109;
+  background-color: #23b109;
 }
+
 .button-lightGreen {
-    background-color: #52f352;
+  background-color: #52f352;
 }
+
 .mat-raised-button {
-    margin-left: 10%;
+  margin-left: 10%;
+}
+
+.table-btns {
+  margin-left: 1%;
+  margin-bottom: 2%;
+}
+
+.table-btns button {
+    margin-right: -8%;
+}
+
+.checkbox-td {
+  text-align: center;
 }

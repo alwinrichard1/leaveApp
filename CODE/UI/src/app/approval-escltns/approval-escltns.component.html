@@ -4,11 +4,144 @@
     <app-header> </app-header>
     <!-- End Navbar -->
     <div class="content">
-      <div class="container-fluid">
-        <div class="img">
-            <img src="./assets/images/storyblocks-approved-and-rejected-stamp-seal-color-vector-imprint-rubber-label-approval-and-denied-illustration_SLZKk-ugM_SB_PM.jpg"/>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-header card-header-success">
+              <h4 class="card-title">Pending leave proposals</h4>
+              <p class="card-category">Upcoming leaves from 15th September, 2016</p>
+            </div>
+            <div class="card-body table-responsive">
+              <table class="table table-hover">
+                <thead class="text-success">
+                  <th class="checkbox-td">
+                    <mat-checkbox class="example-margin"></mat-checkbox>
+                  </th>
+                  <th>Member</th>
+                  <th>Team</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="checkbox-td">
+                      <mat-checkbox class="example-margin"></mat-checkbox>
+                    </td>
+                    <td>Alwin</td>
+                    <td>Consumer</td>
+                    <td>11/12/19</td>
+                    <td>Submitted</td>
+                  </tr>
+                  <tr>
+                    <td class="checkbox-td">
+                      <mat-checkbox class="example-margin"></mat-checkbox>
+                    </td>
+                    <td>Manish</td>
+                    <td>Agent</td>
+                    <td>12/09/19</td>
+                    <td>Submitted</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row table-btns container">
+              <button mat-raised-button>Approve Selected</button>
+              <button mat-raised-button>Approve All</button>
+              <button class="orange-bg" mat-raised-button>Negotiate</button>
+              <button class="red-bg" mat-raised-button>Reject Selected</button>
+            </div>
           </div>
         </div>
+
+
+
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-header card-header-warning">
+              <h4 class="card-title">Pending Leave Requests</h4>
+              <p class="card-category">Leaves till 15th September, 2016</p>
+            </div>
+            <div class="card-body table-responsive">
+              <table class="table table-hover">
+                <thead class="text-warning">
+                  <th class="checkbox-td">
+                    <mat-checkbox class="example-margin"></mat-checkbox>
+                  </th>
+                  <th>Member</th>
+                  <th>Team</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="checkbox-td">
+                      <mat-checkbox class="example-margin"></mat-checkbox>
+                    </td>
+                    <td>Alwin</td>
+                    <td>Consumer</td>
+                    <td>11/12/19</td>
+                    <td>Submitted</td>
+                  </tr>
+                  <tr>
+                    <td class="checkbox-td">
+                      <mat-checkbox class="example-margin"></mat-checkbox>
+                    </td>
+                    <td>Manish</td>
+                    <td>Agent</td>
+                    <td>12/09/19</td>
+                    <td>Submitted</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row table-btns container">
+              <button mat-raised-button>Approve Selected</button>
+              <button mat-raised-button>Approve All</button>
+              <button class="orange-bg" mat-raised-button>Negotiate</button>
+              <button class="red-bg" mat-raised-button>Reject Selected</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-header card-header-info">
+              <h4 class="card-title">Approval History</h4>
+              <p class="card-category">Leaves till 15th September, 2016</p>
+            </div>
+            <div class="card-body table-responsive">
+              <table class="table table-hover">
+                <thead class="text-info">
+                  <th>Member</th>
+                  <th>Team</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alwin</td>
+                    <td>Consumer</td>
+                    <td>11/12/19</td>
+                    <td>Approved</td>
+                  </tr>
+                  <tr>
+                    <td>Manish</td>
+                    <td>Agent</td>
+                    <td>12/09/19</td>
+                    <td>Approved</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 col-md-12">
             <div class="card">
@@ -18,7 +151,9 @@
               <div class="card-body table-responsive">
                 <table class="table table-hover">
                   <thead class="text-info">
-                    <th><mat-checkbox class="example-margin"></mat-checkbox></th>
+                    <th>
+                      <mat-checkbox class="example-margin"></mat-checkbox>
+                    </th>
                     <th>Member</th>
                     <th>Team</th>
                     <th>Date</th>
@@ -26,14 +161,18 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><mat-checkbox class="example-margin"></mat-checkbox></td>
+                      <td>
+                        <mat-checkbox class="example-margin"></mat-checkbox>
+                      </td>
                       <td>Alwin</td>
                       <td>Consumer</td>
                       <td>11/12/19</td>
                       <td>Submitted</td>
                     </tr>
                     <tr>
-                      <td><mat-checkbox class="example-margin"></mat-checkbox></td>
+                      <td>
+                        <mat-checkbox class="example-margin"></mat-checkbox>
+                      </td>
                       <td>Manish</td>
                       <td>Agent</td>
                       <td>12/09/19</td>
@@ -42,15 +181,21 @@
                   </tbody>
                 </table>
                 <div class="example-button-row">
-                    <button mat-raised-button class="button-green">Approve All</button>
-                    <button mat-raised-button class="button-lightGreen">Approve Selected</button>
-                    <button mat-raised-button color="warn">Reject Selected</button>
-                    <button mat-raised-button color="accent">Negotiate</button>
+                  <button mat-raised-button class="button-green">Approve All</button>
+                  <button mat-raised-button class="button-lightGreen">Approve Selected</button>
+                  <button mat-raised-button color="warn">Reject Selected</button>
+                  <button mat-raised-button color="accent">Negotiate</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+
+
+
+
         <div class="row">
           <div class="col-lg-12 col-md-12">
             <div class="card">
@@ -58,41 +203,49 @@
                 <h4 class="card-title">Pending Leave Requests</h4>
               </div>
               <div class="card-body table-responsive">
-                  <table class="table table-hover">
-                      <thead class="text-info">
-                        <th><mat-checkbox class="example-margin"></mat-checkbox></th>
-                        <th>Member</th>
-                        <th>Team</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><mat-checkbox class="example-margin"></mat-checkbox></td>
-                          <td>Alwin</td>
-                          <td>Consumer</td>
-                          <td>11/12/19</td>
-                          <td>Submitted</td>
-                        </tr>
-                        <tr>
-                          <td><mat-checkbox class="example-margin"></mat-checkbox></td>
-                          <td>Manish</td>
-                          <td>Agent</td>
-                          <td>12/09/19</td>
-                          <td>Submitted</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="example-button-row">
-                        <button mat-raised-button class="button-green">Approve All</button>
-                        <button mat-raised-button class="button-lightGreen">Approve Selected</button>
-                        <button mat-raised-button color="warn">Reject Selected</button>
-                        <button mat-raised-button color="accent">Negotiate</button>
-                    </div>
+                <table class="table table-hover">
+                  <thead class="text-info">
+                    <th>
+                      <mat-checkbox class="example-margin"></mat-checkbox>
+                    </th>
+                    <th>Member</th>
+                    <th>Team</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <mat-checkbox class="example-margin"></mat-checkbox>
+                      </td>
+                      <td>Alwin</td>
+                      <td>Consumer</td>
+                      <td>11/12/19</td>
+                      <td>Submitted</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <mat-checkbox class="example-margin"></mat-checkbox>
+                      </td>
+                      <td>Manish</td>
+                      <td>Agent</td>
+                      <td>12/09/19</td>
+                      <td>Submitted</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="example-button-row">
+                  <button mat-raised-button class="button-green">Approve All</button>
+                  <button mat-raised-button class="button-lightGreen">Approve Selected</button>
+                  <button mat-raised-button color="warn">Reject Selected</button>
+                  <button mat-raised-button color="accent">Negotiate</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+
         <div class="row">
           <div class="col-lg-12 col-md-12">
             <div class="card">
@@ -100,32 +253,32 @@
                 <h4 class="card-title">Approval History</h4>
               </div>
               <div class="card-body table-responsive">
-                  <table class="table table-hover">
-                      <thead class="text-info">
-                        <th>Member</th>
-                        <th>Team</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Alwin</td>
-                          <td>Consumer</td>
-                          <td>11/12/19</td>
-                          <td>Approved</td>
-                        </tr>
-                        <tr>
-                          <td>Manish</td>
-                          <td>Agent</td>
-                          <td>12/09/19</td>
-                          <td>Approved</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <table class="table table-hover">
+                  <thead class="text-info">
+                    <th>Member</th>
+                    <th>Team</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Alwin</td>
+                      <td>Consumer</td>
+                      <td>11/12/19</td>
+                      <td>Approved</td>
+                    </tr>
+                    <tr>
+                      <td>Manish</td>
+                      <td>Agent</td>
+                      <td>12/09/19</td>
+                      <td>Approved</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
-        </div>
-      </div>
+      </div> -->
     </div>
+  </div>
