@@ -16,35 +16,39 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { leaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
 import { ChartsModule } from 'ng2-charts';
 import { ApprovalEscltnsComponent } from './approval-escltns/approval-escltns.component';
+import { PersonalComponent } from './dashboard/personal/personal.component';
+import { TeamComponent } from './dashboard/team/team.component';
 
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      HomeComponent,
-      LoginComponent,
-      SidebarComponent,
-      HeaderComponent,
-      FooterComponent,
-      AdminComponent,
-      templateImports,
-      DashboardComponent,
-      leaveMgmtComponent,
-      ApprovalEscltnsComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      materialImports,
-      ChartsModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ],
-   entryComponents: [
-      templateImports
-   ]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        LoginComponent,
+        SidebarComponent,
+        HeaderComponent,
+        FooterComponent,
+        AdminComponent,
+        templateImports,
+        DashboardComponent,
+        leaveMgmtComponent,
+        ApprovalEscltnsComponent,
+        PersonalComponent,
+        TeamComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        materialImports,
+        ChartsModule
+    ],
+    providers: [],
+    bootstrap: [
+        AppComponent
+    ],
+    entryComponents: [
+        templateImports
+    ]
 })
 export class AppModule { }

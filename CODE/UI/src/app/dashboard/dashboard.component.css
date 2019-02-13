@@ -15,7 +15,7 @@
 .wrapper-horizontally-limited {
   width: 500px !important;
 }
- 
+
 /*
   Limited in height,
   useful with grow mode stretch
@@ -23,4 +23,9 @@
 .wrapper-vertically-limited {
   width: 100% !important;
   height: 250px !important;
+}
+
+.selected-toggle {
+  background-color: #9c27b0bd;
+  color: white;
 }

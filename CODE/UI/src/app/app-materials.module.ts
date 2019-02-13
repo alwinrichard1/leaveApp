@@ -10,7 +10,8 @@ import {
     MatAutocompleteModule,
     MatDividerModule,
     MatRadioModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonToggleModule
 } from '@angular/material';
 
 
@@ -26,5 +27,6 @@ export const materialImports = [
     MatExpansionModule,
     MatDividerModule,
     MatRadioModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonToggleModule
 ];

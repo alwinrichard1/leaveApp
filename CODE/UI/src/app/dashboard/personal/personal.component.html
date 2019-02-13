@@ -1,0 +1,99 @@
+<div class="row doughnut-row">
+  <div class="earned-doughnut">
+    <canvas baseChart [data]="doughnutChartDataEarned" [labels]="doughnutChartLabelsEarned" [chartType]="'doughnut'"
+      (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div class="sick-doughnut">
+    <canvas baseChart [data]="doughnutChartDataSick" [labels]="doughnutChartLabelsSick" [chartType]="'doughnut'"
+      (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div class="flexi-doughnut">
+    <canvas baseChart [data]="doughnutChartDataFlexi" [labels]="doughnutChartLabelsFlexi" [chartType]="'doughnut'"
+      (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div class="comp-doughnut">
+    <canvas baseChart [data]="doughnutChartDataComp" [labels]="doughnutChartLabelsComp" [chartType]="'doughnut'"
+      (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div class="RH-doughnut">
+    <canvas baseChart [data]="doughnutChartDataRH" [labels]="doughnutChartLabelsRH" [chartType]="'doughnut'"
+      (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>
+<div class="row bar-calender-row">
+  <div class="col-md-6">
+    <h3>Leave history</h3>
+    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+      [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="wrapper-vertically-limited col-md-2">
+    <h3>Next Holiday</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6 col-md-12">
+    <div class="card">
+      <div class="card-header card-header-info">
+        <h4 class="card-title">Upcoming leaves</h4>
+        <p class="card-category">Upcoming leaves from 15th September, 2016</p>
+      </div>
+      <div class="card-body table-responsive">
+        <table class="table table-hover">
+          <thead class="text-info">
+            <th>Leave type</th>
+            <th>Reason</th>
+            <th>Date</th>
+            <th>Status</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Planned leave</td>
+              <td>Hospital emergency</td>
+              <td>11/12/19</td>
+              <td>Approved</td>
+            </tr>
+            <tr>
+              <td>Flexi leave</td>
+              <td>Interview</td>
+              <td>12/09/19</td>
+              <td>Rejected</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-12">
+    <div class="card">
+      <div class="card-header card-header-warning">
+        <h4 class="card-title">Past leaves</h4>
+        <p class="card-category">Leaves till 15th September, 2016</p>
+      </div>
+      <div class="card-body table-responsive">
+        <table class="table table-hover">
+          <thead class="text-warning">
+            <th>Leave type</th>
+            <th>Reason</th>
+            <th>Date</th>
+            <th>Status</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Planned leave</td>
+              <td>Hospital emergency</td>
+              <td>11/12/19</td>
+              <td>Approved</td>
+            </tr>
+            <tr>
+              <td>Flexi leave</td>
+              <td>Interview</td>
+              <td>12/09/19</td>
+              <td>Rejected</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

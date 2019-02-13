@@ -14,8 +14,9 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'dashboard', component: DashboardComponent },
+    { path: 'dashboard/:pageType', component: DashboardComponent },
     { path: 'leaveMgmt', component: leaveMgmtComponent },
-    { path: 'approval-escltns', component:ApprovalEscltnsComponent },
+    { path: 'approval-escltns', component: ApprovalEscltnsComponent },
     { path: '**', component: HomeComponent },
 
 ];
