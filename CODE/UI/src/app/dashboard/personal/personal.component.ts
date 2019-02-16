@@ -25,7 +25,7 @@ export class PersonalComponent implements OnInit {
   public doughnutChartDataRH: number[] = [0, 1];
 
 
-  /**PIE chart */
+  /**Bar chart */
   public barChartOptions: any = {
     scaleShowVerticalLines: false,
     responsive: true
