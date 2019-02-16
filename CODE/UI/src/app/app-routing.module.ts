@@ -6,6 +6,7 @@ import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { leaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
 import { ApprovalEscltnsComponent } from './approval-escltns/approval-escltns.component';
+import { SubPageApprvlComponent } from './approval-escltns/sub-page-apprvl/sub-page-apprvl.component';
 
 /** INCLUDE PATH IN ROUTES */
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'dashboard/:pageType', component: DashboardComponent },
     { path: 'leaveMgmt', component: leaveMgmtComponent },
     { path: 'approval-escltns', component: ApprovalEscltnsComponent },
+    { path: 'sub-page-apprvl', component: SubPageApprvlComponent },
     { path: '**', component: HomeComponent },
 
 ];

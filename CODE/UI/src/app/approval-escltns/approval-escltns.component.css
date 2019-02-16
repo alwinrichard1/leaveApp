@@ -27,3 +27,6 @@
 .checkbox-td {
   text-align: center;
 }
+.nameVar {
+  cursor: pointer;
+}

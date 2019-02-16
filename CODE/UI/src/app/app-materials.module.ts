@@ -11,7 +11,10 @@ import {
     MatDividerModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule 
 } from '@angular/material';
 
 
@@ -28,5 +31,8 @@ export const materialImports = [
     MatDividerModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDatepickerModule,
+    MatNativeDateModule ,
+    MatFormFieldModule
 ];

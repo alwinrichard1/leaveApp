@@ -1,0 +1,148 @@
+<div class="wrapper ">
+  <app-sidebar></app-sidebar>
+  <div class="main-panel">
+    <app-header> </app-header>
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <mat-card class="example-card userPic">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Haridas Vattaparambil</mat-card-title>
+              <mat-card-subtitle>Professional</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+          </mat-card>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card ">
+            <div class="card-body table-responsive">
+              <table class="table table-hover">
+                <thead class="text-info">
+                  <th>Leave Type</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>No. Of Days</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Earned Leave</td>
+                    <td>21/02/2016</td>
+                    <td>21/02/2017</td>
+                    <td>21</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+            <div class="card">
+              <div id="commentsDiv">
+               <mat-form-field class="commentBox" appearance="outline">
+                <mat-label>Requestor Comments</mat-label>
+                <input matInput placeholder="Enter your comments">
+              </mat-form-field>
+               <mat-form-field class="commentBox" appearance="outline">
+                <mat-label>Approver's Comments</mat-label>
+                <input matInput placeholder="Enter your comments">
+              </mat-form-field>
+              </div>
+              <div class="row table-btns container">
+                <button mat-raised-button>Approve Selected</button>
+                <button mat-raised-button>Approve All</button>
+                <button mat-raised-button>Negotiate</button>
+                <button mat-raised-button>Reject Selected</button>
+              </div>
+              <div class="chkboxMngr">
+               <mat-checkbox class="example-margin">Send for Manager's Approval</mat-checkbox>
+              </div>
+            </div> 
+            <!--Start Date:
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker1" placeholder="02/16/2019">
+              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+            End Date:
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker2" placeholder="02/16/2019">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>-->
+            </div>
+        </div>
+        <div class="row bar-calender-row">
+          <div class="col-md-6">
+            <h3>Leave history</h3>
+            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+              [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-header card-header-info">
+              <h4 class="card-title">Haridas' Past Leaves</h4>
+            </div>
+            <div class="card-body table-responsive">
+              <table class="table table-hover">
+                <thead class="text-info">
+                  <th>Leave Types</th>
+                  <th>Reason</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Earned Leave</td>
+                    <td>Hospital</td>
+                    <td>11/12/19</td>
+                    <td>Approved</td>
+                  </tr>
+                  <tr>
+                    <td>Sick Leave</td>
+                    <td>Sick</td>
+                    <td>12/09/19</td>
+                    <td>Approved</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-header card-header-info">
+              <h4 class="card-title">Team Members Leave Plan</h4>
+            </div>
+            <div class="card-body table-responsive">
+              <table class="table table-hover">
+                <thead class="text-info">
+                  <th>Member</th>
+                  <th>Team</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alwin</td>
+                    <td>Consumer</td>
+                    <td>11/12/19</td>
+                    <td>Approved</td>
+                  </tr>
+                  <tr>
+                    <td>Manish</td>
+                    <td>Agent</td>
+                    <td>12/09/19</td>
+                    <td>Approved</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

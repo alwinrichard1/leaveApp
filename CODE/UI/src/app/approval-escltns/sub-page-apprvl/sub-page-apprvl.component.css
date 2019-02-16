@@ -1,0 +1,33 @@
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.mat-raised-button {
+    margin-left: 8%;
+}
+.chkboxMngr {
+    margin-top: 2%;
+    margin-left: 8%
+}
+.example-margin {
+    margin-right: 1%;
+}
+.commentBox {
+    margin-left: 6%;
+    width: 40%;
+}
+#commentsDiv {
+    margin-top: 3%;
+}
+.mat-checkbox-layout .mat-checkbox-label {
+    line-height: 25px;
+}
+.userPic {
+    width: 41%;
+    margin-left: 24%;
+    /* height: 10%; */
+    margin-top: 3%;
+}
+.mat-card-image {
+    padding: 5%;
+}

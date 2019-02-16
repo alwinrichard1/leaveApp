@@ -18,6 +18,7 @@ import { ChartsModule } from 'ng2-charts';
 import { ApprovalEscltnsComponent } from './approval-escltns/approval-escltns.component';
 import { PersonalComponent } from './dashboard/personal/personal.component';
 import { TeamComponent } from './dashboard/team/team.component';
+import { SubPageApprvlComponent } from './approval-escltns/sub-page-apprvl/sub-page-apprvl.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { TeamComponent } from './dashboard/team/team.component';
         leaveMgmtComponent,
         ApprovalEscltnsComponent,
         PersonalComponent,
-        TeamComponent
+        TeamComponent,
+        SubPageApprvlComponent
     ],
     imports: [
         BrowserModule,
