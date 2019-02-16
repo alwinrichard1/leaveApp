@@ -21,7 +21,7 @@
   <div class="col-md-6">
     <h3>Leave history</h3>
     <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="true"
-      [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      [chartType]="'bar'"></canvas>
   </div>
   <div class="col-md-6">
     <div class="card">
@@ -66,7 +66,7 @@
   <div class="col-md-6">
     <h3>Today's Leave</h3>
     <canvas baseChart [datasets]="barChartDataToday" [labels]="barChartLabelsToday" [options]="barChartOptions"
-      [legend]="true" [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      [legend]="true" [chartType]="'bar'"></canvas>
   </div>
   <div class="col-md-6">
     <div class="card">
@@ -123,8 +123,7 @@
     <h3>Leave Trends</h3>
     <div style="display: block;">
       <canvas baseChart width="400" height="200" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
-        [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)"
-        (chartClick)="chartClicked($event)"></canvas>
+        [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"></canvas>
     </div>
   </div>
   <div class="col-md-6">
@@ -166,11 +165,11 @@
   <div class="col-md-6">
     <h3>Monthly Leave</h3>
     <canvas baseChart [datasets]="barChartDataMonthly" [labels]="barChartLabelsMonthly" [options]="barChartOptions"
-      [legend]="true" [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      [legend]="true" [chartType]="'bar'"></canvas>
   </div>
   <div class="col-md-6">
     <h3>Remaining Billable days</h3>
     <canvas baseChart [datasets]="barChartDataRemain" [labels]="barChartLabelsRemain" [options]="barChartOptions"
-      [legend]="true" [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      [legend]="true" [chartType]="'bar'"></canvas>
   </div>
 </div>
