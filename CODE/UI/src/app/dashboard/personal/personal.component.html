@@ -1,33 +1,37 @@
 <div class="row doughnut-row">
   <div class="earned-doughnut">
-    <canvas baseChart [data]="doughnutChartDataEarned" [labels]="doughnutChartLabelsEarned" [chartType]="'doughnut'"
+    <canvas baseChart [colors]="donutColorsErnd" [data]="doughnutChartDataEarned" [labels]="doughnutChartLabelsEarned" [chartType]="'doughnut'"
       (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      <div class="leaveType"><b>Earned Leaves</b></div>
   </div>
   <div class="sick-doughnut">
-    <canvas baseChart [data]="doughnutChartDataSick" [labels]="doughnutChartLabelsSick" [chartType]="'doughnut'"
+    <canvas baseChart [colors]="donutColorsSick" [data]="doughnutChartDataSick" [labels]="doughnutChartLabelsSick" [chartType]="'doughnut'"
       (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      <div class="leaveType"><b>Sick Leaves</b></div>
   </div>
   <div class="flexi-doughnut">
-    <canvas baseChart [data]="doughnutChartDataFlexi" [labels]="doughnutChartLabelsFlexi" [chartType]="'doughnut'"
+    <canvas baseChart [colors]="donutColorsFlexi" [data]="doughnutChartDataFlexi" [labels]="doughnutChartLabelsFlexi" [chartType]="'doughnut'"
       (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      <div class="leaveType"><b>Flexi Leaves</b></div>
   </div>
   <div class="comp-doughnut">
-    <canvas baseChart [data]="doughnutChartDataComp" [labels]="doughnutChartLabelsComp" [chartType]="'doughnut'"
+    <canvas baseChart [colors]="donutColorsComp" [data]="doughnutChartDataComp" [labels]="doughnutChartLabelsComp" [chartType]="'doughnut'"
       (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      <div class="leaveType"><b>Comp Off Leaves</b></div>
   </div>
   <div class="RH-doughnut">
-    <canvas baseChart [data]="doughnutChartDataRH" [labels]="doughnutChartLabelsRH" [chartType]="'doughnut'"
+    <canvas baseChart [colors]="donutColors" [data]="doughnutChartDataRH" [labels]="doughnutChartLabelsRH" [chartType]="'doughnut'"
       (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      <div class="leaveType"><b>RH Leaves</b></div>
   </div>
 </div>
 <div class="row bar-calender-row">
   <div class="col-md-6">
     <h3>Leave history</h3>
-    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+    <canvas baseChart  [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
       [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
   </div>
-  <div class="col-md-1"></div>
-  <div class="wrapper-vertically-limited col-md-2">
+  <div class="wrapper-vertically-limited col-md-6">
     <h3 class="calHeadr"><b>Next Holiday</b></h3>
     <div class="calender">
       <div class="calender-month">Saturday</div>

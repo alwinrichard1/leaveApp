@@ -9,21 +9,31 @@ export class PersonalComponent implements OnInit {
 
 
   /**Donut chart */
-  public doughnutChartLabelsEarned: string[] = ['Earned leaves', 'Remaining'];
+  public doughnutChartLabelsEarned: string[] = ['Used', 'Remaining'];
   public doughnutChartDataEarned: number[] = [7, 10];
-
-  public doughnutChartLabelsSick: string[] = ['Sick leaves', 'Remaining'];
+  private donutColorsErnd=[{
+    backgroundColor: ['rgb(255, 0, 0)']
+  }];
+  public doughnutChartLabelsSick: string[] = ['Used', 'Remaining'];
   public doughnutChartDataSick: number[] = [2, 4];
-
-  public doughnutChartLabelsFlexi: string[] = ['Flexi leaves', 'Remaining'];
+  private donutColorsSick=[{
+    backgroundColor: ['rgb(51, 204, 255)']
+  }];
+  public doughnutChartLabelsFlexi: string[] = ['Used', 'Remaining'];
   public doughnutChartDataFlexi: number[] = [1, 1];
-
-  public doughnutChartLabelsComp: string[] = ['Comp leaves', 'Remaining'];
+  private donutColorsFlexi=[{
+    backgroundColor: ['rgba(0, 148, 97, 1)']
+  }];
+  public doughnutChartLabelsComp: string[] = ['Used', 'Remaining'];
   public doughnutChartDataComp: number[] = [0, 1];
-
-  public doughnutChartLabelsRH: string[] = ['RH leaves', 'Remaining'];
+  private donutColorsComp=[{
+    backgroundColor: ['rgb(255, 255, 0)'  ]
+  }];
+  public doughnutChartLabelsRH: string[] = ['Used', 'Remaining'];
   public doughnutChartDataRH: number[] = [0, 1];
-
+  private donutColors=[{
+    backgroundColor: ['rgb(255, 153, 255)']
+  }];
 
   /**Bar chart */
   public barChartOptions: any = {
@@ -32,13 +42,16 @@ export class PersonalComponent implements OnInit {
   };
   public barChartLabels: string[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   public barChartLegend = true;
-
+  // public chartColors: any[] = [
+  //     { 
+  //       backgroundColor:["#0000", "#6FC8CE", "#FAFFF2", "#FFFCC4", "#B9E8E0"] 
+  //     }];
   public barChartData: any[] = [
-    { data: [2, 0, 3, 0, 1, 4, 0], label: 'Earned' },
-    { data: [0, 1, 1, 0, 0, 1, 2], label: 'Sick' },
-    { data: [0, 0, 0, 0, 0, 1, 0], label: 'Flexi' },
-    { data: [0, 1, 0, 1, 0, 0, 1], label: 'Comp' },
-    { data: [0, 0, 1, 0, 0, 0, 0], label: 'RH' }
+    { data: [1, 2, 3, 4, 5, 6, 7], label: 'Earned',  backgroundColor:'rgb(255, 0, 0)' },
+    { data: [1, 2, 3, 4, 5, 6, 7], label: 'Sick', backgroundColor:'rgb(51, 204, 255)' },
+    { data: [1, 2, 3, 4, 5, 6, 7], label: 'Flexi', backgroundColor:'rgba(0, 148, 97, 1)' },
+    { data: [1, 2, 3, 4, 5, 0, 7], label: 'Comp', backgroundColor:'rgb(255, 255, 0)' },
+    { data: [1, 2, 3, 4, 5, 6, 7], label: 'RH', backgroundColor:'rgb(255, 153, 255)' }
   ];
 
   constructor() { }

@@ -32,10 +32,10 @@
 		font-size: 1em; /* change icon size */
 		display: block;
 		position: relative;
-		width: 8em;
-		height: 8em;
+		width: 12em;
+		height: 12em;
 		background-color: #fff;
-		margin: 2em auto;
+		margin: 5em auto;
 		border-radius: 0.6em;
 		box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
 		overflow: hidden;
@@ -66,16 +66,17 @@
 .calender .calender-month
 {
   position: absolute;
-  bottom: 0.3em;
+  bottom: 0.8em;
   color: #fd9f1b;
+  font-size: 21px;
 }
 
 .calender .calender-day
 {
   width: 100%;
-  font-size: 2.8em;
+  font-size: 5.8em;
   letter-spacing: -0.05em;
-  padding-top: 60px;
+  padding-top: 47%;
   color: #2f2f2f;
 }
 
@@ -101,5 +102,18 @@
   100% { transform: rotate(0deg)  skewY(0deg); }
 }
 .calHeadr {
-  margin-left: 18%;
+  margin-left: 40%;
+  font-size: 26px;
 }  
+/*#leaveTypeEL {
+  margin-left: 33%;
+}
+#leaveTypeSL, #leaveTypeFL {
+  margin-left: 37%;
+}
+#leaveTypeCF {
+  margin-left: 31%;
+}*/
+.leaveType {
+  text-align: center;
+}
