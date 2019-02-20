@@ -12,6 +12,16 @@
   background-color: #52f352;
 }
 
+.button-pink {
+  background-color: #ec729c;
+  color: white;
+}
+
+.button-red {
+  background-color: #f26c62;
+  color: white;
+}
+
 .mat-raised-button {
   margin-left: 10%;
 }
@@ -22,12 +32,13 @@
 }
 
 .table-btns button {
-    margin-right: -8%;
+  margin-right: -8%;
 }
 
 .checkbox-td {
   text-align: center;
 }
+
 .nameVar {
   cursor: pointer;
 }

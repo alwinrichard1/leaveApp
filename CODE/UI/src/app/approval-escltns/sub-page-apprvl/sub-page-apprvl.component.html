@@ -5,7 +5,7 @@
     <!-- End Navbar -->
     <div class="content">
       <div class="row">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-3 col-md-12">
           <mat-card class="example-card userPic">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
@@ -15,11 +15,15 @@
             <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
           </mat-card>
         </div>
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-7 col-md-12">
           <div class="card ">
+            <div class="card-header card-header-primary">
+              <h4 class="card-title">Haridas' Leave request</h4>
+              <p class="card-category">You can handle leave request here.</p>
+            </div>
             <div class="card-body table-responsive">
               <table class="table table-hover">
-                <thead class="text-info">
+                <thead class="text-primary">
                   <th>Leave Type</th>
                   <th>Start Date</th>
                   <th>End Date</th>
@@ -28,35 +32,36 @@
                 <tbody>
                   <tr>
                     <td>Earned Leave</td>
-                    <td>21/02/2016</td>
                     <td>21/02/2017</td>
-                    <td>21</td>
+                    <td>23/02/2017</td>
+                    <td>2</td>
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
-            <div class="card">
-              <div id="commentsDiv">
-               <mat-form-field class="commentBox" appearance="outline">
-                <mat-label>Requestor Comments</mat-label>
-                <input matInput placeholder="Enter your comments">
-              </mat-form-field>
-               <mat-form-field class="commentBox" appearance="outline">
-                <mat-label>Approver's Comments</mat-label>
-                <input matInput placeholder="Enter your comments">
-              </mat-form-field>
-              </div>
-              <div class="row table-btns container">
-              <button mat-raised-button class="button-green">Approve Selected</button>
-              <button mat-raised-button color="accent">Negotiate</button>
-              <button mat-raised-button color="warn">Reject Selected</button>
+              <div class="req-comments-div">
+                <p class="req-comments">Requestor Comments:
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book.</span>
+                </p>
               </div>
               <div class="chkboxMngr">
-               <mat-checkbox class="example-margin">Send for Manager's Approval</mat-checkbox>
+                <mat-checkbox class="example-margin">Send for Manager's Approval</mat-checkbox>
               </div>
-            </div> 
-            <!--Start Date:
+              <div id="commentsDiv row">
+                <mat-form-field class="col-md-4" appearance="outline">
+                  <mat-label>Approver's Comments</mat-label>
+                  <input matInput placeholder="Enter your comments">
+                </mat-form-field>
+                <button mat-raised-button class="button-green">Approve Selected</button>
+                <button mat-raised-button class="button-pink">Negotiate</button>
+                <button mat-raised-button class="button-red">Reject Selected</button>
+              </div>
+            </div>
+
+
+          </div>
+          <!--Start Date:
             <mat-form-field>
               <input matInput [matDatepicker]="picker1" placeholder="02/16/2019">
               <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
@@ -68,71 +73,71 @@
               <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
               <mat-datepicker #picker2></mat-datepicker>
             </mat-form-field>-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h3>Leave history</h3>
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+            [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-header card-header-primary">
+              <h4 class="card-title">Absence Balances</h4>
+              <p class="card-category">Your Complete Leave balances</p>
             </div>
-        </div>
-        <div class="row">
-        <div class="col-lg-6 col-md-12">
-            <h3>Leave history</h3>
-            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
-              [chartType]="'bar'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-        </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="card">
-              <div class="card-header card-header-primary">
-                <h4 class="card-title">Absence Balances</h4>
-                <p class="card-category">Your Complete Leave balances</p>
-              </div>
-              <div class="card-body table-responsive">
-                <table class="table table-hover">
-                  <thead class="text-warning">
-                    <th>Type</th>
-                    <th>Balance</th>
-                    <th>From Date</th>
-                    <th>Through Date</th>
-                    <th>As of Date</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Compensatory Leave</td>
-                      <td>0.00</td>
-                      <td>11/12/19</td>
-                      <td></td>
-                      <td>11/12/19</td>
-                    </tr>
-                    <tr>
-                      <td>Earned Leave</td>
-                      <td>17.25</td>
-                      <td>11/12/19</td>
-                      <td></td>
-                      <td>11/12/19</td>
-                    </tr>
-                    <tr>
-                      <td>Flexi Leave</td>
-                      <td>Hospital</td>
-                      <td>11/12/19</td>
-                       <td></td>
-                      <td>12/09/19</td>
+            <div class="card-body table-responsive">
+              <table class="table table-hover">
+                <thead class="text-warning">
+                  <th>Type</th>
+                  <th>Balance</th>
+                  <th>From Date</th>
+                  <th>Through Date</th>
+                  <th>As of Date</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Compensatory Leave</td>
+                    <td>0.00</td>
+                    <td>11/12/19</td>
+                    <td></td>
+                    <td>11/12/19</td>
+                  </tr>
+                  <tr>
+                    <td>Earned Leave</td>
+                    <td>17.25</td>
+                    <td>11/12/19</td>
+                    <td></td>
+                    <td>11/12/19</td>
+                  </tr>
+                  <tr>
+                    <td>Flexi Leave</td>
+                    <td>Hospital</td>
+                    <td>11/12/19</td>
+                    <td></td>
+                    <td>12/09/19</td>
                   </tr>
                   <tr>
                     <td>RH Leave</td>
                     <td>Sick</td>
                     <td>12/09/19</td>
-                     <td></td>
+                    <td></td>
                     <td>12/09/19</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>Sick Leave</td>
                     <td>Sick</td>
                     <td>12/09/19</td>
-                     <td></td>
+                    <td></td>
                     <td>12/09/19</td>
                   </tr>
-                  </tbody>
-                </table>
-              </div>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
+      </div>
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <div class="card">
@@ -200,4 +205,3 @@
     </div>
   </div>
 </div>
-

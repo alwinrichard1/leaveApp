@@ -2,35 +2,72 @@
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
+
 .mat-raised-button {
-    margin-left: 13%;
+  margin-left: 10px;
 }
+
 .chkboxMngr {
-    margin-top: 2%;
-    margin-left: 8%
+  margin-left: 2%;
 }
+
 .example-margin {
-    margin-right: 1%;
+  margin-right: 1%;
 }
+
 .commentBox {
-    margin-left: 6%;
-    width: 40%;
+  /* margin-left: 6%; */
+  width: 40%;
 }
+
 #commentsDiv {
-    margin-top: 3%;
+  margin-top: 3%;
 }
+
 .mat-checkbox-layout .mat-checkbox-label {
-    line-height: 25px;
+  line-height: 25px;
 }
+
 .userPic {
-    width: 41%;
+  /* width: 41%;
     margin-left: 24%;
-    /* height: 10%; */
-    margin-top: 3%;
+    margin-top: 3%; */
 }
+
 .mat-card-image {
-    padding: 5%;
+  padding: 5%;
 }
+
+.req-comments-div {
+  margin-left: 8px;
+}
+
+.req-comments {
+  color: #9c27b0;
+  font-weight: 500;
+}
+
+.req-comments span {
+  color: black;
+  font-weight: 300;
+}
+
+
 .button-green {
-  background-color: #23b109;
+  background-color: #66bb6a;
+  color: white;
+}
+
+.button-lightGreen {
+  background-color: #52f352;
+}
+
+.button-pink {
+  background-color: #ec729c;
+  color: white;
+}
+
+.button-red {
+  background-color: #f26c62;
+  color: white;
 }

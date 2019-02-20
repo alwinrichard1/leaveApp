@@ -13,7 +13,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { templateImports } from './app-templates.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { leaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
+import { LeaveMgmtComponent } from './leaveMgmt/leaveMgmt.component';
 import { ChartsModule } from 'ng2-charts';
 import { ApprovalEscltnsComponent } from './approval-escltns/approval-escltns.component';
 import { PersonalComponent } from './dashboard/personal/personal.component';
@@ -32,7 +32,7 @@ import { SubPageApprvlComponent } from './approval-escltns/sub-page-apprvl/sub-p
         AdminComponent,
         templateImports,
         DashboardComponent,
-        leaveMgmtComponent,
+        LeaveMgmtComponent,
         ApprovalEscltnsComponent,
         PersonalComponent,
         TeamComponent,

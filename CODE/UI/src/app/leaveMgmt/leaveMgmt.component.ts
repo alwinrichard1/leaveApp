@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-leaveMgmt',
+  selector: 'app-leavemgmt',
   templateUrl: './leaveMgmt.component.html',
   styleUrls: ['./leaveMgmt.component.css']
 })
-export class leaveMgmtComponent implements OnInit {
+export class LeaveMgmtComponent implements OnInit {
 
 
   /**Donut chart */
@@ -64,8 +64,8 @@ export class leaveMgmtComponent implements OnInit {
     console.log(e);
   }
 
-  public test():void {
-    console.log("clicked..");
+  public test(): void {
+    console.log('clicked..');
   }
 
   public randomize(): void {
