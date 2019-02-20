@@ -12,22 +12,22 @@ export class PersonalComponent implements OnInit {
   public doughnutChartLabelsEarned: string[] = ['Used', 'Remaining'];
   public doughnutChartDataEarned: number[] = [7, 10];
   private donutColorsErnd=[{
-    backgroundColor: ['rgb(255, 0, 0)']
+    backgroundColor: ['rgb(234,67,53)']
   }];
   public doughnutChartLabelsSick: string[] = ['Used', 'Remaining'];
   public doughnutChartDataSick: number[] = [2, 4];
   private donutColorsSick=[{
-    backgroundColor: ['rgb(51, 204, 255)']
+    backgroundColor: ['rgb(251, 188, 5)']
   }];
   public doughnutChartLabelsFlexi: string[] = ['Used', 'Remaining'];
   public doughnutChartDataFlexi: number[] = [1, 1];
   private donutColorsFlexi=[{
-    backgroundColor: ['rgba(0, 148, 97, 1)']
+    backgroundColor: ['rgba(52, 168, 83)']
   }];
   public doughnutChartLabelsComp: string[] = ['Used', 'Remaining'];
   public doughnutChartDataComp: number[] = [0, 1];
   private donutColorsComp=[{
-    backgroundColor: ['rgb(255, 255, 0)'  ]
+    backgroundColor: ['rgb(66, 133, 244)'  ]
   }];
   public doughnutChartLabelsRH: string[] = ['Used', 'Remaining'];
   public doughnutChartDataRH: number[] = [0, 1];
@@ -47,11 +47,11 @@ export class PersonalComponent implements OnInit {
   //       backgroundColor:["#0000", "#6FC8CE", "#FAFFF2", "#FFFCC4", "#B9E8E0"] 
   //     }];
   public barChartData: any[] = [
-    { data: [1, 2, 3, 4, 5, 6, 7], label: 'Earned',  backgroundColor:'rgb(255, 0, 0)' },
-    { data: [1, 2, 3, 4, 5, 6, 7], label: 'Sick', backgroundColor:'rgb(51, 204, 255)' },
-    { data: [1, 2, 3, 4, 5, 6, 7], label: 'Flexi', backgroundColor:'rgba(0, 148, 97, 1)' },
-    { data: [1, 2, 3, 4, 5, 0, 7], label: 'Comp', backgroundColor:'rgb(255, 255, 0)' },
-    { data: [1, 2, 3, 4, 5, 6, 7], label: 'RH', backgroundColor:'rgb(255, 153, 255)' }
+    { data: [1, 4, 3, 2, 5, 6, 2], label: 'Earned',  backgroundColor:'rgb(255, 0, 0)' },
+    { data: [2, 1, 3, 4, 5, 6, 7], label: 'Sick', backgroundColor:'rgb(51, 204, 255)' },
+    { data: [1, 4, 3, 2, 5, 6, 7], label: 'Flexi', backgroundColor:'rgba(0, 148, 97, 1)' },
+    { data: [0, 2, 3, 4, 1, 0, 7], label: 'Comp', backgroundColor:'rgb(255, 255, 0)' },
+    { data: [5, 2, 1, 4, 5, 6, 4], label: 'RH', backgroundColor:'rgb(255, 153, 255)' }
   ];
 
   constructor() { }

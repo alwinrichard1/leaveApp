@@ -58,16 +58,16 @@
   top: 0;
   padding: 0.4em 0;
   color: #fff;
-  background-color: #fd9f1b;
-  border-bottom: 1px dashed #f37302;
-  box-shadow: 0 2px 0 #fd9f1b;
+  background-color: #519463;
+  border-bottom: 1px dashed #519463;
+  box-shadow: 0 2px 0 #519463;
 }
 
 .calender .calender-month
 {
   position: absolute;
   bottom: 0.8em;
-  color: #fd9f1b;
+  color: #519463;
   font-size: 21px;
 }
 
@@ -82,8 +82,8 @@
 
 .calender:hover, .calender:focus
 {
-  -webkit-animation: swing 0.6s ease-out;
-  animation: swing 0.6s ease-out;
+  /* -webkit-animation: swing 0.6s ease-out;
+  animation: swing 0.6s ease-out; */
 }
 
 @-webkit-keyframes swing {

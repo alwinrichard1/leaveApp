@@ -10,7 +10,7 @@ import { SubPageApprvlComponent } from './approval-escltns/sub-page-apprvl/sub-p
 
 /** INCLUDE PATH IN ROUTES */
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: DashboardComponent },
     { path: 'login', component: LoginComponent },
     { path: 'home', component: HomeComponent },
     { path: 'admin', component: AdminComponent },
@@ -18,8 +18,8 @@ const routes: Routes = [
     { path: 'dashboard/:pageType', component: DashboardComponent },
     { path: 'leaveMgmt', component: leaveMgmtComponent },
     { path: 'approval-escltns', component: ApprovalEscltnsComponent },
-    { path: 'sub-page-apprvl', component: SubPageApprvlComponent },
-    { path: '**', component: HomeComponent },
+    { path: 'approval-escltns/:userId', component: SubPageApprvlComponent },
+    { path: '**', component: DashboardComponent },
 
 ];
 
