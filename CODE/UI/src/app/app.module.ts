@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +19,12 @@ import { ApprovalEscltnsComponent } from './approval-escltns/approval-escltns.co
 import { PersonalComponent } from './dashboard/personal/personal.component';
 import { TeamComponent } from './dashboard/team/team.component';
 import { SubPageApprvlComponent } from './approval-escltns/sub-page-apprvl/sub-page-apprvl.component';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule  } from '@angular/fire/database';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -43,7 +48,13 @@ import { SubPageApprvlComponent } from './approval-escltns/sub-page-apprvl/sub-p
         AppRoutingModule,
         BrowserAnimationsModule,
         materialImports,
-        ChartsModule
+        ChartsModule,
+        AngularFireModule.initializeApp(environment.firebase,'eq-my-leaves'),
+        AngularFirestoreModule,
+        AngularFireStorageModule,
+        FormsModule,
+        ReactiveFormsModule,
+        AngularFireDatabaseModule 
     ],
     providers: [],
     bootstrap: [

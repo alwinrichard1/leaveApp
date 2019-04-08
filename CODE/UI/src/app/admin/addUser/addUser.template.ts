@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material';
+import { CrudService } from 'app/shared/crud.service';
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'; // Reactive form services
 
 @Component({
     selector: 'app-add-user-component',
     templateUrl: 'addUser.template.html',
     styleUrls: ['addUser.template.css'],
 })
-export class AddUserComponent {
-
+export class AddUserComponent implements OnInit  {
+    public studentForm: FormGroup;
     statuses = [
         { value: 'active', viewValue: 'Active' },
         { value: 'inactive', viewValue: 'Inactive' }
@@ -35,11 +37,42 @@ export class AddUserComponent {
     ];
 
     constructor(
+        public crudApi: CrudService,
+        public fb: FormBuilder, 
         public dialogRef: MatDialogRef<AddUserComponent>) { }
 
+    ngOnInit() {
+        this.studenForm();
+    }    
+
+    studenForm() {
+        this.studentForm = this.fb.group({
+          name: ['', [Validators.required, Validators.minLength(2)]],
+          email: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
+          contact: ['', [Validators.required, Validators.pattern('^[0-9]+$')]]
+        })  
+      }
 
     onNoClick(): void {
         this.dialogRef.close();
+    }
+
+     // Accessing form control using getters
+    get name() {
+        return this.studentForm.get('name');
+    }
+
+    get email() {
+        return this.studentForm.get('email');
+    }
+
+    get contact() {
+        return this.studentForm.get('contact');
+    }
+
+    submitStudentData(){
+        console.log(this.studentForm.value);
+        this.crudApi.Adduser(this.studentForm.value);
     }
 
 
